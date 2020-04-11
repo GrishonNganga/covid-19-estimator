@@ -2,6 +2,7 @@
 
 function covid19ImpactEstimator($data)
 {
+  $data = json_decode($data);
   $reportedCases = $data->reportedCases;
   
   $periodType = $data->periodType;
